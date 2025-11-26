@@ -1,7 +1,23 @@
+body {
+  background-image: url('Imagen_Tienda.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Anton', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
 .main-title {
   color: red;
   font-family: 'Architects Daughter', cursive;
-  font-size: 5rem; /* Título más grande */
+  font-size: 4rem;
   margin-bottom: 40px;
   text-shadow: 4px 4px 8px rgba(0,0,0,0.4);
 }
@@ -11,8 +27,8 @@
   color: black;
   border: 4px solid black;
   padding: 20px 32px;
-  margin: 18px 0;
-  font-size: 2rem; /* Botones más grandes */
+  margin: 15px 0;
+  font-size: 2rem;
   border-radius: 18px;
   cursor: pointer;
   width: 90%;
@@ -28,20 +44,11 @@
   transform: scale(1.08);
 }
 
+/* Login button green */
 .green-login {
   background: #00b300;
   color: white;
   border: 4px solid black;
-  padding: 20px 32px;
-  margin: 18px 0;
-  font-size: 2rem;
-  border-radius: 18px;
-  cursor: pointer;
-  width: 90%;
-  max-width: 380px;
-  font-family: 'Anton', sans-serif;
-  font-weight: bold;
-  transition: transform 0.2s ease;
 }
 
 .green-login:hover {
@@ -49,14 +56,81 @@
   transform: scale(1.08);
 }
 
+/* Login labels */
+.login-label {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 10px;
+}
+
+/* Login inputs */
+.login-input {
+  font-size: 2rem;
+  padding: 15px;
+  border: 4px solid black;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 380px;
+  text-align: center;
+}
+
+/* Grid for admin menu boxes */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  width: 95%;
+  max-width: 900px;
+  margin-top: 20px;
+}
+
+/* Individual box */
+.menu-card {
+  background: rgba(255,255,255,0.75);
+  padding: 25px;
+  border-radius: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Watermark up right */
+.watermark {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  text-align: right;
+  font-size: 1.1rem;
+  opacity: 0.40;
+  line-height: 1.4;
+  color: black;
+  font-family: 'Anton', sans-serif;
+  background: rgba(255,255,255,0.35);
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .main-title {
-    font-size: 3.2rem; /* Ajuste móvil */
+    font-size: 3rem;
   }
-
-  .btn, .green-login {
-    font-size: 1.7rem;
+  .btn {
+    font-size: 1.6rem;
     padding: 18px 28px;
-    width: 95%;
+  }
+  .login-label {
+    font-size: 2.3rem;
+  }
+  .login-input {
+    font-size: 1.5rem;
+    padding: 12px;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 }
