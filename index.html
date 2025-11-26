@@ -4,32 +4,68 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Login - Movimientos Tienda</title>
+
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Anton&display=swap" rel="stylesheet">
+
+<style>
+/* Estilos específicos de login */
+.login-label {
+  font-size: 3rem; /* Letras muy grandes */
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Botón verde ingresar principal */
+.green-login {
+  background: #00b300;
+  color: white;
+  border: 4px solid black;
+  padding: 18px 26px;
+  font-size: 1.8rem;
+  border-radius: 14px;
+  cursor: pointer;
+  width: 85%;
+  max-width: 320px;
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.green-login:hover {
+  background: #007000;
+  transform: scale(1.06);
+}
+</style>
+
 <script>
 function ingresar(){
-  // Simula inicio de sesión y avanza al menú principal
+  // Simula login y avanza
   window.location.href = "menu_principal.html";
 }
 </script>
+
 </head>
 <body>
 
 <h1 class="main-title">Movimientos Tienda</h1>
 
 <div class="login-box">
-  <h2 style="font-size:2rem;color:black;">Usuario</h2>
-  <h2 style="font-size:2rem;color:black;">Contraseña</h2>
+
+  <label class="login-label">Usuario</label>
+  <label class="login-label">Contraseña</label>
+
   <button class="green-login" onclick="ingresar()">Ingresar</button>
 </div>
 
 <div class="watermark">
   UNIVERSIDAD IBERO<br>
-  Freddy Orlando Guerrero Gutierrez<br>
+  Freddy Orlando Guerrero<br>
   fguerre6@estudiante.ibero.edu.co<br>
   CC 79609475
 </div>
 
 </body>
 </html>
-
