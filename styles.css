@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 20px;
 }
@@ -17,16 +18,38 @@ body {
 .main-title {
   color: red;
   font-family: 'Architects Daughter', cursive;
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 40px;
   text-shadow: 4px 4px 8px rgba(0,0,0,0.4);
 }
 
+/* Títulos del administrador (menús) */
+.admin-label {
+  font-size: 3.5rem;
+  color: green;
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Inputs del login */
+.login-input {
+  font-size: 2rem;
+  padding: 15px;
+  border: 4px solid black;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 380px;
+  text-align: center;
+}
+
+/* Todos los botones iguales de grandes */
 .btn {
   background: white;
   color: black;
   border: 4px solid black;
-  padding: 20px 32px;
+  padding: 22px 34px;
   margin: 15px 0;
   font-size: 2rem;
   border-radius: 18px;
@@ -44,93 +67,58 @@ body {
   transform: scale(1.08);
 }
 
-/* Login button green */
-.green-login {
+/* Botón verde SOLO login (mismo tamaño que todos) */
+.green-btn {
   background: #00b300;
   color: white;
   border: 4px solid black;
+  padding: 22px 34px;
+  margin: 15px 0;
+  font-size: 2rem;
+  border-radius: 18px;
+  cursor: pointer;
+  width: 90%;
+  max-width: 380px;
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+  transition: transform 0.2s ease;
 }
-
-.green-login:hover {
+.green-btn:hover {
   background: #007000;
   transform: scale(1.08);
 }
 
-/* Login labels */
-.login-label {
-  font-size: 3rem;
-  font-weight: bold;
-  color: black;
-  font-family: 'Anton', sans-serif;
-  margin-bottom: 10px;
-}
-
-/* Login inputs */
-.login-input {
-  font-size: 2rem;
-  padding: 15px;
-  border: 4px solid black;
-  border-radius: 14px;
-  width: 90%;
-  max-width: 380px;
-  text-align: center;
-}
-
-/* Grid for admin menu boxes */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 22px;
-  width: 95%;
-  max-width: 900px;
-  margin-top: 20px;
-}
-
-/* Individual box */
-.menu-card {
-  background: rgba(255,255,255,0.75);
-  padding: 25px;
-  border-radius: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Watermark up right */
 .watermark {
   position: fixed;
-  top: 12px;
-  right: 12px;
+  top: 14px;
+  right: 14px;
   text-align: right;
-  font-size: 1.1rem;
-  opacity: 0.40;
+  font-size: 1.4rem;
+  opacity: 0.50;
   line-height: 1.4;
   color: black;
+  background: rgba(255,255,255,0.4);
+  padding: 12px 14px;
+  border-radius: 12px;
   font-family: 'Anton', sans-serif;
-  background: rgba(255,255,255,0.35);
-  padding: 8px 10px;
-  border-radius: 10px;
+  font-weight: bold;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .main-title {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
-  .btn {
-    font-size: 1.6rem;
-    padding: 18px 28px;
+  .admin-label {
+    font-size: 2.6rem;
   }
-  .login-label {
-    font-size: 2.3rem;
+  .btn, .green-btn {
+    font-size: 1.8rem;
+    padding: 18px 26px;
+    width: 95%;
   }
   .login-input {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 12px;
-  }
-  .grid-container {
-    grid-template-columns: 1fr;
+    width: 95%;
   }
 }
