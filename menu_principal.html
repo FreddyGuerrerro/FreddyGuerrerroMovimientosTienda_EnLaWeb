@@ -2,30 +2,36 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menú Principal</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Menu Principal</title>
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Anton&display=swap" rel="stylesheet">
+<script>
+function aceptarMenu(){
+  let val=document.getElementById("menuSel").value;
+  alert("Seleccionaste: " + val + " ✅ (acción simulada)");
+}
+</script>
 </head>
 <body>
 
 <h1 class="main-title">MENU PRINCIPAL TIENDA DE ABARROTES</h1>
 
 <div class="menu-box">
-  <a href="menu_cliente.html"><button class="btn">Menú Cliente</button></a>
-  <a href="menu_admin.html"><button class="btn">Menú Administrador</button></a>
-  <a href="index.html"><button class="btn">Salir</button></a>
+<a href="menu_cliente.html"><button class="btn">1. Cliente</button></a>
+<a href="menu_admin.html"><button class="btn">2. Administrador</button></a>
+<a href="index.html"><button class="btn">3. Salir</button></a>
 
-  <p>Seleccione una opción:</p>
-  <input type="text" placeholder="Ej: 1, 2 o 3"><br><br>
-  <button class="btn">Aceptar</button>
+<p>Seleccione una opción:</p>
+<input id="menuSel" type="text"><br><br>
+<button class="btn" onclick="aceptarMenu()">Aceptar</button>
 </div>
 
 <div class="watermark">
-  UNIVERSIDAD IBERO<br>
-  Freddy Orlando Guerrero Gutierrez<br>
-  fguerre6@estudiante.ibero.edu.co<br>
-  CC 79609475
+UNIVERSIDAD IBERO<br>
+Freddy Orlando Guerrero Gutierrez<br>
+fguerre6@estudiante.ibero.edu.co<br>
+CC 79609475
 </div>
 
 </body>
