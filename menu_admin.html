@@ -3,41 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Menu Admin</title>
+<title>Menú Administrador</title>
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Anton&display=swap" rel="stylesheet">
 <script>
-function verClientes(){
-  alert(localStorage.getItem("clientes")||"No hay clientes simulados aún");
-}
-function agregarCliente(){
-  let c=prompt("Nombre del cliente:");
-  let clientes=JSON.parse(localStorage.getItem("clientes")||"[]");
-  clientes.push(c);
-  localStorage.setItem("clientes",JSON.stringify(clientes));
-  alert("Cliente agregado ✅ (simulado)");
-}
+function gestionarClientes(){alert("Clientes SIMULADOS ✅");}
+function gestionarProveedores(){alert("Proveedores SIMULADOS ✅");}
+function gestionarInventario(){alert("Inventario SIMULADO ✅");}
+function gestionarPedidos(){alert("Pedidos SIMULADOS ✅");}
 </script>
 </head>
 <body>
 
-<h1 class="main-title">MENU ADMINISTRADOR</h1>
+<h1 class="main-title">MENU ADMIN</h1>
 
 <div class="menu-box">
-  <h2>2.1 Gestionar Clientes</h2>
-  <button class="btn" onclick="verClientes()">Ver lista de clientes</button>
-  <button class="btn" onclick="agregarCliente()">Agregar un cliente</button>
+<button class="aceptar-btn btn" onclick="gestionarClientes()">Gestionar Clientes</button>
+<button class="aceptar-btn btn" onclick="gestionarProveedores()">Gestionar Proveedores</button>
+<button class="aceptar-btn btn" onclick="gestionarInventario()">Gestionar Inventario</button>
+<button class="aceptar-btn btn" onclick="gestionarPedidos()">Gestionar Pedidos</button>
+<a href="menu_principal.html"><button class="btn aceptar-btn">Volver</button></a>
 
-  <h2>2.2 Gestionar Proveedores</h2>
-  <button class="btn" onclick="alert(localStorage.getItem('proveedores')||'Sin datos')">Ver proveedores</button>
-  <button class="btn" onclick="let p=prompt('Proveedor:');let l=JSON.parse(localStorage.getItem('proveedores')||'[]');l.push(p);localStorage.setItem('proveedores',JSON.stringify(l));alert('Agregado ✅');">Agregar proveedor</button>
-  <button class="btn" onclick="localStorage.removeItem('proveedores');alert('Eliminados ✅');">Eliminar proveedores</button>
-
-  <h2>2.3 Gestionar Inventario</h2>
-  <button class="btn" onclick="alert('Stock general simulado ✅')">Ver stock</button>
-
-  <br><br>
-  <a href="menu_principal.html"><button class="btn">Volver menú principal</button></a>
+<p style="font-size:2rem;">Opción:</p>
+<input type="text">
 </div>
 
 <div class="watermark">
@@ -49,3 +37,4 @@ CC 79609475
 
 </body>
 </html>
+
