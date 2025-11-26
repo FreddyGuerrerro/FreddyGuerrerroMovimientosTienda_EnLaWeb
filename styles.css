@@ -1,0 +1,60 @@
+body {
+  background-image: url('Imagen_Tienda.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Anton', sans-serif;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-title {
+  color: red;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 3rem;
+  margin-top: 30px;
+}
+
+.menu-box, .login-box {
+  background: rgba(255,255,255,0.6);
+  padding: 25px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+input {
+  width: 240px;
+  padding: 10px;
+  margin-top: 8px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #444;
+}
+
+.btn {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  padding: 12px 18px;
+  margin: 6px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: black;
+  color: white;
+}
+
+.watermark {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  font-size: 0.85rem;
+  opacity: 0.35;
+  line-height: 1.2;
+}
