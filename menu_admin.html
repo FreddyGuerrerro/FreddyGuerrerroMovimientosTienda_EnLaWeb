@@ -8,9 +8,9 @@
 <script>
 function verClientes(){alert("👤 Lista clientes (simulado) ✅")}
 function verProveedores(){alert("🚚 Lista proveedores (simulado) ✅")}
-function verStock(){alert("📦 Stock (simulado) ✅")}
+function verInventario(){alert("📦 Inventario simulado ✅")}
 function verPedidos(){alert("📄 Pedidos (simulado) ✅")}
-function balance(){alert("📊 Balance (simulado) ✅")}
+function verBalance(){alert("📊 Balance simulado ✅")}
 </script>
 </head>
 <body>
@@ -19,37 +19,39 @@ function balance(){alert("📊 Balance (simulado) ✅")}
 
 <div class="grid-container">
 
-  <div class="menu-card menu-card"><div class="menu-card">
-    <h2 style="font-size:2.2rem;">Gestionar Clientes</h2>
-    <button class="btn" onclick="verClientes()">Ver Clientes</button>
-  </div></div>
+  <div class="menu-card">
+    <h2 class="admin-label">Gestionar clientes</h2>
+    <button class="btn" onclick="verClientes()">Ver lista</button>
+  </div>
 
-  <div class="menu-card"><div class="menu-card">
-    <h2 style="font-size:2.2rem;">Gestionar Proveedores</h2>
-    <button class="btn" onclick="verProveedores()">Ver Proveedores</button>
-  </div></div>
+  <div class="menu-card">
+    <h2 class="admin-label">Gestionar Proveedores</h2>
+    <button class="btn" onclick="verProveedores()">Ver lista</button>
+  </div>
 
-  <div class="menu-card"><div class="menu-card">
-    <h2 style="font-size:2.2rem;">Gestionar Inventario</h2>
-    <button class="btn" onclick="verStock()">Ver Stock</button>
-  </div></div>
+  <div class="menu-card">
+    <h2 class="admin-label">Gestionar inventario</h2>
+    <button class="btn" onclick="verInventario()">Ver stock</button>
+  </div>
 
-  <div class="menu-card"><div class="menu-card">
-    <h2 style="font-size:2.2rem;">Gestionar Pedidos</h2>
-    <button class="btn" onclick="verPedidos()">Ver Pedidos</button>
-  </div></div>
+  <div class="menu-card">
+    <h2 class="admin-label">Gestionar Pedidos</h2>
+    <button class="btn" onclick="verPedidos()">Ver pedidos</button>
+  </div>
 
-  <div class="menu-card"><div class="menu-card">
-    <h2 style="font-size:2.2rem;">Balance General y Reportes</h2>
-    <button class="btn" onclick="balance()">Ver Balance</button>
-  </div></div>
+  <div class="menu-card">
+    <h2 class="admin-label">Balance General y Reportes</h2>
+    <button class="btn" onclick="verBalance()">Ver balance</button>
+  </div>
 
-  <div class="menu-card"><a href="menu_principal.html">
-    <button class="btn">Volver al menú principal</button>
-  </a></div>
+  <div class="menu-card">
+    <h2 class="admin-label">Volver al Menú Principal</h2>
+    <a href="menu_principal.html"><button class="btn">Volver al Menú Principal</button></a>
+  </div>
 
 </div>
 
+<!-- UNICA marca de agua arriba derecha -->
 <div class="watermark">
   UNIVERSIDAD IBERO<br>
   Freddy Orlando Guerrero<br>
