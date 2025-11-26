@@ -4,61 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Menú Cliente</title>
-
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Anton&display=swap" rel="stylesheet">
-
 <script>
-function realizarPedido(){
-  alert("🛒 Pedido SIMULADO realizado correctamente.");
-}
-
-function verDetalles(){
-  alert("📄 Aquí irían los detalles del pedido (simulación).");
-}
-
-function pagarFactura(){
-  let resp = confirm("¿Desea pagar la factura?");
-  if (resp) {
-    alert("💰 Pago realizado exitosamente (simulación).");
-  } else {
-    alert("⛔ Pago cancelado.");
-  }
-}
+function realizarPedido(){ alert("🛒 Pedido simulado ✅"); }
+function verDetallesPedido(){ alert("📦 Detalles del pedido simulado ✅"); }
+function pagarFactura(){ alert("💰 Pago de factura simulado ✅"); }
 </script>
-
 </head>
 <body>
 
-<h1 class="main-title" style="font-size:4rem;">MENÚ CLIENTE</h1>
+<h1 class="main-title">MENU CLIENTE</h1>
 
 <div class="menu-box">
-
-  <button class="btn" style="font-size:2rem;" onclick="realizarPedido()">
-    1. Realizar un Pedido
-  </button>
-
-  <button class="btn" style="font-size:2rem;" onclick="verDetalles()">
-    2. Detalles del Pedido Realizado
-  </button>
-
-  <button class="btn" style="font-size:2rem;" onclick="pagarFactura()">
-    3. Pagar Factura (SI/NO)
-  </button>
-
-  <a href="menu_principal.html">
-    <button class="aceptar-btn btn" style="font-size:2rem;">
-      4. Volver al menú principal
-    </button>
-  </a>
-
+  <button class="btn" onclick="realizarPedido()">Realizar un Pedido</button>
+  <button class="btn" onclick="verDetallesPedido()">Detalles del Pedido</button>
+  <button class="btn" onclick="pagarFactura()">Pagar Factura (SI/NO)</button>
+  <a href="menu_principal.html"><button class="btn">Volver menú principal</button></a>
 </div>
 
 <div class="watermark">
-UNIVERSIDAD IBERO<br>
-Freddy Orlando Guerrero Gutierrez<br>
-fguerre6@estudiante.ibero.edu.co<br>
-CC 79609475
+  UNIVERSIDAD IBERO<br>
+  Freddy Orlando Guerrero<br>
+  fguerre6@estudiante.ibero.edu.co<br>
+  CC 79609475
 </div>
 
 </body>
