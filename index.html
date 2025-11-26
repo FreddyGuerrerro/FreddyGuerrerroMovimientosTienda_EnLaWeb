@@ -4,97 +4,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Login - Movimientos Tienda</title>
-
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Anton&display=swap" rel="stylesheet">
-
-<style>
-/* Texto del login gigante */
-.login-label {
-  font-size: 3rem;
-  font-weight: bold;
-  color: black;
-  margin: 20px 0 10px 0;
-  font-family: 'Anton', sans-serif;
-  display: block;
-}
-
-/* Inputs también enormes */
-.login-input {
-  font-size: 2rem;
-  padding: 15px;
-  border: 4px solid black;
-  border-radius: 14px;
-  width: 90%;
-  max-width: 380px;
-  text-align: center;
-}
-
-/* Botón verde ingresar */
-.green-login {
-  background: #00b300;
-  color: white;
-  border: 4px solid black;
-  padding: 20px 32px;
-  margin-top: 35px;
-  font-size: 2rem;
-  border-radius: 18px;
-  cursor: pointer;
-  width: 90%;
-  max-width: 380px;
-  font-family: 'Anton', sans-serif;
-  font-weight: bold;
-  transition: transform 0.2s ease;
-}
-
-.green-login:hover {
-  background: #007000;
-  transform: scale(1.08);
-}
-</style>
-
 <script>
 function ingresar(){
   const user = document.getElementById("user").value.trim();
   const pass = document.getElementById("pass").value.trim();
-
-  if (!user || !pass) {
+  if(!user || !pass){
     alert("⚠ Debes llenar usuario y contraseña");
     return;
   }
-
-  // Simula login y avanza a menú principal
-  window.location.href = "menu_principal.html";
+  window.location.href="menu_principal.html";
 }
 </script>
-
 </head>
 <body>
 
 <h1 class="main-title">Movimientos Tienda</h1>
 
-<div class="login-box">
-
-  <!-- Usuario -->
+<div class="menu-card">
   <label class="login-label">Usuario</label>
   <input id="user" type="text" class="login-input" placeholder="Escribe usuario">
 
-  <!-- Contraseña -->
   <label class="login-label">Contraseña</label>
   <input id="pass" type="password" class="login-input" placeholder="Escribe contraseña">
 
-  <!-- Botón ingresar verde -->
-  <button class="green-login btn" onclick="ingresar()">Ingresar</button>
+  <div style="margin-top:15px;font-size:1.5rem;font-family:'Anton',sans-serif;cursor:pointer;">
+    ¿Olvidaste tu contraseña?
+  </div>
 
+  <button class="btn green-login" onclick="ingresar()">Ingresar</button>
 </div>
 
 <div class="watermark">
   UNIVERSIDAD IBERO<br>
-  Freddy Orlando Guerrero<br>
+  Freddy Orlando Guerrero Gutierrez<br>
   fguerre6@estudiante.ibero.edu.co<br>
   CC 79609475
 </div>
 
 </body>
 </html>
-
