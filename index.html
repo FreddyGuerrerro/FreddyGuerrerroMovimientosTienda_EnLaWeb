@@ -4,60 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Login - Movimientos Tienda</title>
-
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Anton&display=swap" rel="stylesheet">
-
-<style>
-/* Botón verde funcional para ingresar */
-.green-btn {
-  background: #00b300;
-  color: white;
-  border: 4px solid black;
-  font-size: 2rem;
-  padding: 20px 30px;
-  border-radius: 14px;
-  cursor: pointer;
-  width: 85%;
-  max-width: 320px;
-  font-family: 'Anton', sans-serif;
-  font-weight: bold;
-  transition: all 0.2s ease;
-}
-
-.green-btn:hover {
-  background: #007000;
-  transform: scale(1.06);
-}
-</style>
-
 <script>
-function ingresar() {
-  const user = document.getElementById("user").value.trim();
-  const pass = document.getElementById("pass").value.trim();
-
-  if (!user || !pass) {
-    alert("⚠ Debes llenar usuario y contraseña");
-    return;
-  }
-
-  // Simulación correcta, ahora sí avanza:
+function ingresar(){
+  // Simulación de login, avanza directo al menú principal
   window.location.href = "menu_principal.html";
 }
 </script>
-
 </head>
 <body>
 
 <h1 class="main-title">Movimientos Tienda</h1>
 
 <div class="login-box">
-  <label>Usuario:</label><br>
-  <input id="user" type="text" placeholder="Escribe usuario"><br><br>
-
-  <label>Contraseña:</label><br>
-  <input id="pass" type="password" placeholder="Escribe contraseña"><br><br>
-
+  <label style="font-size:2rem;">Usuario:</label><br><br>
+  <label style="font-size:2rem;">Contraseña:</label><br><br>
   <button class="green-btn" onclick="ingresar()">Ingresar</button>
 </div>
 
