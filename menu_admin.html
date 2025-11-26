@@ -15,47 +15,60 @@ function verBalance(){alert("📊 Balance simulado ✅")}
 </head>
 <body>
 
-<div style="background-color: green; color: white; padding: 20px; border-radius: 10px; width: 100%; max-width: 800px; box-sizing: border-box; text-align: center;">
-  <h1 class="main-title" style="font-size: 52px; font-weight: bold; margin: 0; word-wrap: break-word;">
-    MENU ADMINISTRADOR
+<!-- Título principal en caja verde -->
+<div style="background-color: green; color: white; padding: 20px; border-radius: 10px; width: 100%; max-width: 800px; box-sizing: border-box; text-align: center; margin-bottom: 30px;">
+  <h1 style="font-size: 52px; font-weight: bold; margin: 0; word-wrap: break-word;">
+    MENU <span style="color: white;">ADMINISTRADOR</span>
   </h1>
 </div>
 
 <div class="grid-container">
 
+  <!-- Gestionar clientes -->
   <div class="menu-card">
-    <h2 class="admin-label"style="background-color: blue; color: white; padding: 20px; border-radius: 10px; width: 100%; max-width: 800px; box-sizing: border-box; text-align: center;">
-  <h1 class="main-title" style="font-size: 52px; font-weight: bold; margin: 0; word-wrap: break-word;">Gestionar clientes</h2>
+    <div style="background-color: blue; color: white; padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 10px;">
+      <h2 style="font-size: 52px; font-weight: bold; margin: 0; word-wrap: break-word;">Gestionar clientes</h2>
+    </div>
     <button class="btn" onclick="verClientes()">Ver lista</button>
   </div>
 
+  <!-- Gestionar Proveedores -->
   <div class="menu-card">
-    <h2 class="admin-label"style="background-color: blue; color: white; padding: 20px; border-radius: 10px; width: 100%; max-width: 800px; box-sizing: border-box; text-align: center;">
-  <h1 class="main-title" style="font-size: 52px; font-weight: bold; margin: 0; word-wrap: break-word;">Gestionar Proveedores</h2>
+    <div style="background-color: blue; color: white; padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 10px;">
+      <h2 style="font-size: 52px; font-weight: bold; margin: 0; word-wrap: break-word;">Gestionar Proveedores</h2>
+    </div>
     <button class="btn" onclick="verProveedores()">Ver lista</button>
   </div>
 
+  <!-- Gestionar inventario -->
   <div class="menu-card">
-    <h2 class="admin-label"style="background-color: blue; color: white; padding: 20px; border-radius: 10px; width: 100%; max-width: 800px; box-sizing: border-box; text-align: center;">
-  <h1 class="main-title" style="font-size: 52px; font-weight: bold; margin: 0; word-wrap: break-word;">Gestionar inventario</h2>
+    <div style="background-color: blue; color: white; padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 10px;">
+      <h2 style="font-size: 52px; font-weight: bold; margin: 0; word-wrap: break-word;">Gestionar inventario</h2>
+    </div>
     <button class="btn" onclick="verInventario()">Ver stock</button>
   </div>
 
+  <!-- Gestionar Pedidos -->
   <div class="menu-card">
-    <h2 class="admin-label"style="background-color: blue; color: white; padding: 20px; border-radius: 10px; width: 100%; max-width: 800px; box-sizing: border-box; text-align: center;">
-  <h1 class="main-title" style="font-size: 52px; font-weight: bold; margin: 0; word-wrap: break-word;">Gestionar Pedidos</h2>
+    <div style="background-color: blue; color: white; padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 10px;">
+      <h2 style="font-size: 52px; font-weight: bold; margin: 0; word-wrap: break-word;">Gestionar Pedidos</h2>
+    </div>
     <button class="btn" onclick="verPedidos()">Ver pedidos</button>
   </div>
 
+  <!-- Balance General y Reportes -->
   <div class="menu-card">
-    <h2 class="admin-label"style="background-color: blue; color: white; padding: 20px; border-radius: 10px; width: 100%; max-width: 800px; box-sizing: border-box; text-align: center;">
-  <h1 class="main-title" style="font-size: 52px; font-weight: bold; margin: 0; word-wrap: break-word;">Balance General y Reportes</h2>
+    <div style="background-color: blue; color: white; padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 10px;">
+      <h2 style="font-size: 52px; font-weight: bold; margin: 0; word-wrap: break-word;">Balance General y Reportes</h2>
+    </div>
     <button class="btn" onclick="verBalance()">Ver balance</button>
   </div>
 
+  <!-- Volver al Menú Principal -->
   <div class="menu-card">
-    <h2 class="admin-label"style="background-color: blue; color: white; padding: 20px; border-radius: 10px; width: 100%; max-width: 800px; box-sizing: border-box; text-align: center;">
-  <h1 class="main-title" style="font-size: 52px; font-weight: bold; margin: 0; word-wrap: break-word;">Volver al Menú Principal</h2>
+    <div style="background-color: blue; color: white; padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 10px;">
+      <h2 style="font-size: 52px; font-weight: bold; margin: 0; word-wrap: break-word;">Volver al Menú Principal</h2>
+    </div>
     <a href="menu_principal.html"><button class="btn">Volver al Menú Principal</button></a>
   </div>
 
