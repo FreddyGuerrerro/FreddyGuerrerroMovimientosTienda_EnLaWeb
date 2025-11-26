@@ -52,12 +52,13 @@ body {
   transform: scale(1.06);
 }
 
-.green-btn {
+/* Botón verde – SOLO para login */
+.green-login {
   background: #00b300;
   color: white;
   border: 4px solid black;
-  font-size: 2rem;
   padding: 20px 30px;
+  font-size: 2rem;
   border-radius: 14px;
   cursor: pointer;
   width: 85%;
@@ -67,7 +68,7 @@ body {
   transition: all 0.2s ease;
 }
 
-.green-btn:hover {
+.green-login:hover {
   background: #007000;
   transform: scale(1.06);
 }
@@ -89,17 +90,10 @@ body {
   .main-title {
     font-size: 2.6rem;
   }
-
-  .btn {
+  .btn, .green-login {
     font-size: 1.5rem;
     padding: 14px 20px;
   }
-
-  .green-btn {
-    font-size: 1.5rem;
-    padding: 14px 20px;
-  }
-
   .menu-box, .login-box {
     padding: 22px;
     width: 95%;
