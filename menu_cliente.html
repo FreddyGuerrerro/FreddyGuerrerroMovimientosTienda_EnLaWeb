@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Menú Cliente</title>
+<title>Cliente</title>
 <link rel="stylesheet" href="styles.css">
 <script>
 function realizarPedido(){alert("🛒 Pedido simulado ✅")}
@@ -15,17 +15,11 @@ function pagarFactura(){alert("💰 Pago simulado ✅")}
 
 <h1 class="main-title">MENU CLIENTE</h1>
 
-<div class="menu-card">
-  <button class="btn" onclick="realizarPedido()">Realizar Pedido</button>
-  <button class="btn" onclick="verDetallesPedido()">Detalles Pedido</button>
-  <button class="btn" onclick="pagarFactura()">Pagar Factura</button>
-  <a href="menu_principal.html"><button class="btn">Volver al menú principal</button></a>
-</div>
-
-<div class="watermark">
-  UNIVERSIDAD IBERO<br>
-  Freddy Orlando Guerrero<br>
-  CC 79609475
+<div class="grid-container">
+  <div class="menu-card"><button class="btn" onclick="realizarPedido()">Realizar un Pedido</button></div>
+  <div class="menu-card"><button class="btn" onclick="verDetallesPedido()">Detalles del Pedido</button></div>
+  <div class="menu-card"><button class="btn" onclick="pagarFactura()">Pagar Factura</button></div>
+  <div class="menu-card"><a href="menu_principal.html"><button class="btn">Volver al Menú Principal</button></a></div>
 </div>
 
 </body>
