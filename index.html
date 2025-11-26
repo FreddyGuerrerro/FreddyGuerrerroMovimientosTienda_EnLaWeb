@@ -1,49 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Login - Movimientos Tienda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Movimientos Tienda</title>
+    <style>
+        /* ESTILOS GENERALES */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f2f5;
+            font-family: 'Arial', sans-serif;
+        }
 
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Anton&display=swap" rel="stylesheet">
+        /* CONTENEDOR DEL LOGIN */
+        .login-container {
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            width: 320px;
+            text-align: center; /* Todo centrado */
+        }
 
-<script>
-function ingresar(){
-  const user = document.getElementById("user").value.trim();
-  const pass = document.getElementById("pass").value.trim();
-  if(!user || !pass){
-    alert("⚠ Debes llenar usuario y contraseña");
-    return;
-  }
-  window.location.href="menu_principal.html";
-}
-</script>
+        /* TÍTULOS */
+        .login-container h2 {
+            margin-bottom: 15px;
+            color: #28a745; /* verde */
+            font-size: 22px;
+        }
+
+        /* INPUTS */
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        /* BOTÓN */
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-container button:hover {
+            background-color: #218838;
+        }
+
+        /* LINK OLVIDASTE CONTRASEÑA */
+        .login-container a {
+            display: block;
+            margin-top: 15px;
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+    <div class="login-container">
+        <h2>USUARIO</h2>
+        <input type="text" placeholder="Escribe tu usuario">
 
-<h1 class="main-title">MOVIMIENTOS TIENDA</h1>
+        <h2>CONTRASEÑA</h2>
+        <input type="password" placeholder="Escribe tu contraseña">
 
-<div class="menu-card">
-  <label class="admin-label">USUARIO</label>
-  <input id="user" type="text" class="login-input" placeholder="Escribe usuario"><br><br>
+        <button>Iniciar Sesión</button>
 
-  <label class="admin-label">CONTRASEÑA</label>
-  <input id="pass" type="password" class="login-input" placeholder="Escribe contraseña"><br><br>
-
-  <div style="font-size:2rem;margin:25px 0;cursor:pointer;font-weight:bold;">
-    Olvidaste tu contraseña
-  </div>
-
-  <button class="green-btn" onclick="ingresar()">Ingresar</button>
-</div>
-
-<div class="watermark">
-  UNIVERSIDAD IBERO<br>
-  Freddy Orlando Guerrero Gutierrez<br>
-  fguerre6@estudiante.ibero.edu.co<br>
-  CC 79609475
-</div>
-
+        <a href="#">¿Olvidaste la contraseña?</a>
+    </div>
 </body>
 </html>
