@@ -4,8 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Menu Principal</title>
+
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Anton&display=swap" rel="stylesheet">
+
+<style>
+/* BOTÓN ACEPTAR VERDE */
+.aceptar-btn {
+  background: #00b300;
+  color: white;
+  border: 4px solid black;
+  font-size: 2rem;
+  padding: 20px 30px;
+  border-radius: 14px;
+  cursor: pointer;
+  width: 85%;
+  max-width: 320px;
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+}
+
+.aceptar-btn:hover {
+  background: #007000;
+  transform: scale(1.07);
+}
+</style>
+
 <script>
 function aceptarMenu() {
   const opcion = document.getElementById("menuSel").value.trim();
@@ -31,25 +55,27 @@ function aceptarMenu() {
 }
 </script>
 </head>
+
 <body>
 
-<h1 class="main-title">MENU PRINCIPAL</h1>
+<h1 class="main-title" style="font-size:4.2rem;">MOVIMIENTOS TIENDA</h1>
 
 <div class="menu-box">
-<a href="menu_cliente.html"><button class="btn">1. Menú Cliente</button></a>
-<a href="menu_admin.html"><button class="btn">2. Menú Administrador</button></a>
-<a href="index.html"><button class="btn">3. Salir</button></a>
+  <a href="menu_cliente.html"><button class="btn" style="font-size:2rem;">1. Menú Cliente</button></a>
+  <a href="menu_admin.html"><button class="btn" style="font-size:2rem;">2. Menú Administrador</button></a>
+  <a href="index.html"><button class="btn" style="font-size:2rem;">3. Salir</button></a>
 
-<p style="font-size:2.2rem;font-family:Anton;color:black;">Seleccione una opción:</p>
-<input id="menuSel" type="text"><br><br>
-<button class="btn aceptar-btn" onclick="aceptarMenu()">Aceptar</button>
+  <p style="font-size:2.4rem;font-family:Anton;color:black;font-weight:bold;">Seleccione una opción:</p>
+  <input id="menuSel" type="text" placeholder="Escribe 1, 2 o 3" style="font-size:2rem;height:50px;"><br><br>
+
+  <button class="aceptar-btn" onclick="aceptarMenu()">Aceptar</button>
 </div>
 
 <div class="watermark">
-UNIVERSIDAD IBERO<br>
-Freddy Orlando Guerrero Gutierrez<br>
-fguerre6@estudiante.ibero.edu.co<br>
-CC 79609475
+  UNIVERSIDAD IBERO<br>
+  Freddy Orlando Guerrero Gutierrez<br>
+  fguerre6@estudiante.ibero.edu.co<br>
+  CC 79609475
 </div>
 
 </body>
