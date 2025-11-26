@@ -1,89 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Movimientos Tienda</title>
-    <style>
-        /* ESTILOS GENERALES */
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f2f5;
-            font-family: 'Arial', sans-serif;
-        }
-
-        /* CONTENEDOR DEL LOGIN */
-        .login-container {
-            background-color: #fff;
-            padding: 40px 30px;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-            width: 320px;
-            text-align: center; /* Todo centrado */
-        }
-
-        /* TÍTULOS */
-        .login-container h2 {
-            margin-bottom: 15px;
-            color: #28a745; /* verde */
-            font-size: 22px;
-        }
-
-        /* INPUTS */
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 16px;
-        }
-
-        /* BOTÓN */
-        .login-container button {
-            width: 100%;
-            padding: 12px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .login-container button:hover {
-            background-color: #218838;
-        }
-
-        /* LINK OLVIDASTE CONTRASEÑA */
-        .login-container a {
-            display: block;
-            margin-top: 15px;
-            color: #0066cc;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .login-container a:hover {
-            text-decoration: underline;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Movimientos Tienda</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="login-container">
-        <h2>USUARIO</h2>
-        <input type="text" placeholder="Escribe tu usuario">
+        <h2 class="login-label">USUARIO</h2>
+        <input class="login-input" type="text" placeholder="Escribe tu usuario">
 
-        <h2>CONTRASEÑA</h2>
-        <input type="password" placeholder="Escribe tu contraseña">
+        <h2 class="login-label">CONTRASEÑA</h2>
+        <input class="login-input" type="password" placeholder="Escribe tu contraseña">
 
-        <button>Iniciar Sesión</button>
+        <button class="green-btn" onclick="location.href='menu_principal.html'">Iniciar Sesión</button>
 
         <a href="#">¿Olvidaste la contraseña?</a>
     </div>
