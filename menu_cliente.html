@@ -4,29 +4,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Menú Cliente</title>
+
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Anton&display=swap" rel="stylesheet">
+
 <script>
 function realizarPedido(){
-  alert("🛒 Pedido SIMULADO realizado ✅");
+  alert("🛒 Pedido SIMULADO realizado correctamente.");
 }
-function pagar(si){
-  alert("Pago seleccionado: " + si + " ✅ (simulado)");
+
+function verDetalles(){
+  alert("📄 Aquí irían los detalles del pedido (simulación).");
+}
+
+function pagarFactura(){
+  let resp = confirm("¿Desea pagar la factura?");
+  if (resp) {
+    alert("💰 Pago realizado exitosamente (simulación).");
+  } else {
+    alert("⛔ Pago cancelado.");
+  }
 }
 </script>
+
 </head>
 <body>
 
-<h1 class="main-title">MENU CLIENTE</h1>
+<h1 class="main-title" style="font-size:4rem;">MENÚ CLIENTE</h1>
 
 <div class="menu-box">
-<button class="btn" onclick="realizarPedido()">Realizar Pedido</button>
-<button class="btn" onclick="pagar('SI')">Pagar Factura SI</button>
-<button class="btn" onclick="pagar('NO')">Pagar Factura NO</button>
-<a href="menu_principal.html"><button class="aceptar-btn btn">Volver</button></a>
 
-<p style="font-size:2rem;">Seleccione:</p>
-<input type="text">
+  <button class="btn" style="font-size:2rem;" onclick="realizarPedido()">
+    1. Realizar un Pedido
+  </button>
+
+  <button class="btn" style="font-size:2rem;" onclick="verDetalles()">
+    2. Detalles del Pedido Realizado
+  </button>
+
+  <button class="btn" style="font-size:2rem;" onclick="pagarFactura()">
+    3. Pagar Factura (SI/NO)
+  </button>
+
+  <a href="menu_principal.html">
+    <button class="aceptar-btn btn" style="font-size:2rem;">
+      4. Volver al menú principal
+    </button>
+  </a>
+
 </div>
 
 <div class="watermark">
@@ -38,4 +63,3 @@ CC 79609475
 
 </body>
 </html>
-
