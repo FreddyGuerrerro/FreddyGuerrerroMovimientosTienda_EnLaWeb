@@ -3,38 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Menú Administrador</title>
+<title>Administrador</title>
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Anton&display=swap" rel="stylesheet">
 <script>
-function gestionarClientes(){alert("Clientes SIMULADOS ✅");}
-function gestionarProveedores(){alert("Proveedores SIMULADOS ✅");}
-function gestionarInventario(){alert("Inventario SIMULADO ✅");}
-function gestionarPedidos(){alert("Pedidos SIMULADOS ✅");}
+function verClientes(){alert("👤 Clientes simulado ✅");}
+function agregarCliente(){alert("➕ Agregar cliente simulado ✅");}
+function verProveedores(){alert("🚚 Proveedores simulado ✅");}
+function agregarProveedor(){alert("➕ Agregar proveedor simulado ✅");}
+function eliminarProveedor(){alert("🗑 Eliminar proveedor simulado ✅");}
+function verStock(){alert("📦 Stock inventario simulado ✅");}
+function agregarProductos(){alert("➕ Agregar productos simulado ✅");}
+function validarVencimientos(){alert("⚠ Vencimientos simulado ✅");}
+function verDevoluciones(){alert("🔁 Devoluciones simulado ✅");}
+function verPedidos(){alert("📄 Ver pedidos simulado ✅");}
+function efectuarVenta(){alert("💵 Venta simulada ✅");}
+function facturarVenta(){alert("🧾 Factura simulada ✅");}
+function balance(){alert("📊 Balance simulado ✅");}
 </script>
 </head>
 <body>
 
-<h1 class="main-title">MENU ADMIN</h1>
+<h1 class="main-title">MENU ADMINISTRADOR</h1>
 
 <div class="menu-box">
-<button class="aceptar-btn btn" onclick="gestionarClientes()">Gestionar Clientes</button>
-<button class="aceptar-btn btn" onclick="gestionarProveedores()">Gestionar Proveedores</button>
-<button class="aceptar-btn btn" onclick="gestionarInventario()">Gestionar Inventario</button>
-<button class="aceptar-btn btn" onclick="gestionarPedidos()">Gestionar Pedidos</button>
-<a href="menu_principal.html"><button class="btn aceptar-btn">Volver</button></a>
 
-<p style="font-size:2rem;">Opción:</p>
-<input type="text">
+  <h2 style="font-size:2rem;">Gestionar Clientes</h2>
+    <button class="btn" onclick="verClientes()">Ver Clientes</button>
+    <button class="btn" onclick="agregarCliente()">Agregar Cliente</button>
+
+  <h2 style="font-size:2rem;">Gestionar Proveedores</h2>
+    <button class="btn" onclick="verProveedores()">Ver Proveedores</button>
+    <button class="btn" onclick="agregarProveedor()">Agregar Proveedor</button>
+    <button class="btn" onclick="eliminarProveedor()">Eliminar Proveedor</button>
+
+  <h2 style="font-size:2rem;">Gestionar Inventario</h2>
+    <button class="btn" onclick="verStock()">Ver Stock</button>
+    <button class="btn" onclick="agregarProductos()">Agregar Productos</button>
+    <button class="btn" onclick="validarVencimientos()">Validar Vencimientos</button>
+    <button class="btn" onclick="verDevoluciones()">Ver Devoluciones</button>
+
+  <h2 style="font-size:2rem;">Gestionar Pedidos</h2>
+    <button class="btn" onclick="verPedidos()">Ver Pedidos</button>
+    <button class="btn" onclick="efectuarVenta()">Efectuar Venta</button>
+    <button class="btn" onclick="facturarVenta()">Facturar Venta</button>
+
+  <h2 style="font-size:2rem;">Balance General</h2>
+    <button class="btn" onclick="balance()">Ver Balance</button>
+
+  <br><br>
+  <a href="menu_principal.html"><button class="btn">Volver Menú Principal</button></a>
+
 </div>
 
 <div class="watermark">
-UNIVERSIDAD IBERO<br>
-Freddy Orlando Guerrero Gutierrez<br>
-fguerre6@estudiante.ibero.edu.co<br>
-CC 79609475
+  UNIVERSIDAD IBERO<br>
+  Freddy Orlando Guerrero<br>
+  fguerre6@estudiante.ibero.edu.co<br>
+  CC 79609475
 </div>
 
 </body>
 </html>
-
